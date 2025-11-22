@@ -5,11 +5,62 @@
   </head>
   <body>
     <a-scene>
-      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
-      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
-      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
-      <a-sky color="#ECECEC"></a-sky>
+      <a-assets>
+          <img id="sky1" src="assets/snow-scen.jpg">
+          <a-asset-item id="cat" src="assets/cat2.stl.obj"></a-assest-item>
+          <a-asset-item id="cat2" src="assets/gaelikitten_nocape.stl.obj"></a-asset-item>
+
+          <a-asset-item id="kart-obj" src="assets/MarioKart.obj"></a-asset-item>
+          <a-asset-item id="kart-mtl" src="assets/MarioKart.mtl"></a-asset-item>     
+        
+        </a-assets>
+
+      <a-sky src="#sky1"></a-sky>
+ 
+      <a-obj-model src="#cat" position="0 0 -5" rotation="-90 90 0" scale=".1 .1 .1" color="green"></a-obj-model>
+      <a-obj-model src="#cat" position="0 0 20" rotation="-90 280 0" scale=".1 .1 .1" color="red"></a-obj-model>
+      <a-obj-model src="#cat" position="10 0 20" rotation="-90 280 0" scale=".1 .1 .1" color="blue"></a-obj-model>
+      <a-obj-model src="#cat" position="10 0 -5" rotation="-90 90 0" scale=".1 .1 .1" color="purple"></a-obj-model>
+
+      <a-obj-model src="#cat2"  position="11 10 6.5" rotation="-20 90 180" scale=".1 .1 .1" color="orange"></a-obj-model>
+      
+      <a-obj-model
+        src="#kart-obj"
+        mtl="#kart-mtl"
+        position="9.5 .2 13"
+        scale=".45 .45 .45"
+        rotation="0 90 -10"
+      ></a-obj-model>
+
+      <a-obj-model
+        src="#kart-obj"
+        mtl="#kart-mtl"
+        position="9.5 .2 2"
+        scale=".45 .45 .45"
+        rotation="0 -100 -10"
+      ></a-obj-model>
+
+      <a-obj-model
+        src="#kart-obj"
+        mtl="#kart-mtl"
+        position="-.5 .2 13"
+        scale=".45 .45 .45"
+        rotation="0 90 -10"
+      ></a-obj-model>
+
+      <a-obj-model
+        src="#kart-obj"
+        mtl="#kart-mtl"
+        position="-50 5 7"
+        scale="1 1 1"
+        rotation="0 -15 -25"
+      ></a-obj-model>
+
+
+      <!-- <a-box pwosition="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere> 
+      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder> 
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane> -->
     </a-scene>
   </body>
 </html>
